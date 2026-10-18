@@ -1,1 +1,1 @@
-
+const menuButton=document.querySelector('[data-menu-toggle]');const menu=document.querySelector('[data-menu]');if(menuButton&&menu){menuButton.addEventListener('click',()=>{const open=menu.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}));}document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
